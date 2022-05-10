@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +10,26 @@
     <script src="pace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    
+    <style>
+			canvas {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: transparent;
+			}
+		</style>
 </head>
-<body>
 
-		 <h1 class="butts">BREAKOUT</h1>
+<body onload="init()" >
+
+
+<canvas id="background" width="1366px" height="610px">
+			Your browser does not support canvas. Please try again with a different browser.
+		</canvas>
+		
+		
+		 <img src="title.png" class="butts">
      
       	       <button  id = "button1" class="butts" onclick="myFunction()" > New Game</button>
       	       
@@ -23,10 +40,6 @@
        	<button id = "button4" class="butts" onclick="myFunction()"> Credits</button>
        
        	<button id = "button5" class="butts" onclick="myFunction()"> Exit</button>
-      
-     		
-
-     
        
         
 
@@ -57,6 +70,10 @@
             
        });
 
+		
+		
+
+		
       </script>
 
 </body>
